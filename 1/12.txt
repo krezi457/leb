@@ -1,0 +1,29 @@
+ 
+
+SIMULATE
+
+ 
+GENERATE 1,1             
+
+ 
+QUEUE TESTQ              
+
+ 
+SEIZE SERVER            
+DEPART TESTQ              
+
+ 
+ADVANCE 5,2               
+ 
+RELEASE SERVER            
+
+ 
+TERMINATE 0
+
+ 
+GENERATE 100              
+TERMINATE 1                
+ 
+START 1
+
+END

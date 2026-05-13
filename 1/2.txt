@@ -1,0 +1,12 @@
+Simulate 
+Generate 2,1
+advance 1
+queue windo
+seize teler
+depart windo
+advance 3,2
+release teler
+terminate 1
+start 250
+
+end

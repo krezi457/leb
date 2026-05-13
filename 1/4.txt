@@ -1,0 +1,25 @@
+        GENERATE    20              
+        QUEUE       QCQueue        
+
+          SEIZE       Worker1        
+        SEIZE       Worker2       
+        SEIZE       Worker3       
+
+        DEPART      QCQueue       
+        ADVANCE     12             
+        RELEASE     Worker1       
+        RELEASE     Worker2      
+        RELEASE     Worker3         
+        TERMINATE                  
+
+         GENERATE    300             
+        SEIZE       Inventory      
+        ADVANCE     0             
+        RELEASE     Inventory      
+        TERMINATE                
+
+         GENERATE    480          
+        TERMINATE   1              
+
+         START       1      
+end

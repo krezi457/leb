@@ -1,0 +1,30 @@
+ 
+
+SIMULATE
+
+ 
+GENERATE 1,1              
+
+ 
+QUEUE KSQUEUE           
+
+ 
+SEIZE SERVER              
+DEPART KSQUEUE             
+
+ 
+ADVANCE 5,2                
+
+ 
+RELEASE SERVER            
+ 
+TERMINATE 0
+
+ 
+GENERATE 100               
+TERMINATE 1               
+
+ 
+START 1
+
+END

@@ -1,0 +1,33 @@
+; Simulation of Continuous Distributions (Approximation)
+
+SIMULATE
+
+; Customer Arrival (approximate exponential)
+GENERATE 15,5
+
+; Enter Queue
+QUEUE HelpQueue
+
+; Seize Server
+SEIZE HelpDesk
+
+; Leave Queue
+DEPART HelpQueue
+
+; Service Time (Normal approximation)
+ADVANCE 10,2
+
+; Release Server
+RELEASE HelpDesk
+
+; Exit System
+TERMINATE 0
+
+; Stop simulation after 480 minutes
+GENERATE 480
+TERMINATE 1
+
+; Control Section
+START 1
+
+END

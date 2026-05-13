@@ -1,0 +1,27 @@
+
+        GENERATE    18,6           
+        QUEUE       Line  
+
+        SEIZE       Worker1        
+        SEIZE       Worker2         
+        SEIZE       Worker3       
+
+        DEPART      Line           
+        ADVANCE     16,4         
+        RELEASE     Worker1        
+        RELEASE     Worker2        
+        RELEASE     Worker3         
+        TERMINATE                   
+         GENERATE    240              
+        SEIZE       Inventory       
+        ADVANCE     0,0             
+        RELEASE     Inventory       
+        TERMINATE                   
+
+ 
+        GENERATE    480             
+        TERMINATE   1             
+
+
+        START       1               
+end

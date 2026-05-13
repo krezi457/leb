@@ -1,0 +1,42 @@
+        GENERATE    15
+        QUEUE       WashQueue      
+
+         SEIZE       Washer1       
+        SEIZE       Washer2        
+        SEIZE       Washer3        
+
+        DEPART      WashQueue      
+        ADVANCE     15             
+        RELEASE     Washer1        
+        RELEASE     Washer2        
+        RELEASE     Washer3        
+
+         QUEUE       RinseQueue    
+        SEIZE       Washer1        
+        SEIZE       Washer2        
+        SEIZE       Washer3        
+
+        DEPART      RinseQueue     
+        ADVANCE     10             
+        RELEASE     Washer1        
+        RELEASE     Washer2
+        RELEASE     Washer3
+
+         QUEUE       SpinQueue      
+        SEIZE       Washer1       
+        SEIZE       Washer2
+        SEIZE       Washer3
+
+        DEPART      SpinQueue      
+        ADVANCE     5             
+        RELEASE     Washer1
+        RELEASE     Washer2
+        RELEASE     Washer3
+
+        TERMINATE                 
+
+         GENERATE    480             
+        TERMINATE   1              
+
+         START       1              
+         end

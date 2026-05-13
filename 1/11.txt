@@ -1,0 +1,33 @@
+; Random Delay Demonstration
+
+SIMULATE
+
+; Generate entities with random arrival variation
+GENERATE 10,1
+
+; Queue section
+QUEUE Line
+
+; Use server
+SEIZE Server
+
+; Random processing time
+ADVANCE 5,2
+
+; Release server
+RELEASE Server
+
+; Leave queue
+DEPART Line
+
+; Exit system
+TERMINATE 0
+
+; Stop simulation after 1000 minutes
+GENERATE 1000
+TERMINATE 1
+
+; Start simulation
+START 1
+
+END

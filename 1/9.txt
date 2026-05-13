@@ -1,0 +1,16 @@
+SIMULATE            ; Start simulation
+
+GENERATE 3,1        ; Generate transactions every 3±1 units
+QUEUE CPUQ          ; Join CPU queue
+SEIZE CPU           ; Capture CPU resource
+DEPART CPUQ         ; Leave queue
+ADVANCE 5,2         ; Processing time 5±2
+RELEASE CPU         ; Release CPU
+TERMINATE 0         ; End transaction
+
+GENERATE 300        ; Simulation timer
+TERMINATE 1         ; Stop simulation
+
+START 1             ; Start simulation
+
+end
